@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MoviesService} from '../../services/movies.service';
+import {CommonService} from '../../services/common.service';
 import {TopRatedInterface} from '../../interfaces/top-rated.interface';
 
 @Component({
@@ -10,7 +10,7 @@ import {TopRatedInterface} from '../../interfaces/top-rated.interface';
 export class TopRatedMoviesComponent implements OnInit {
 data: TopRatedInterface[] = []
 
-  constructor(private getTopService: MoviesService) { }
+  constructor(private getTopService: CommonService) { }
 
   ngOnInit(): void {
     this.getTopMovies('top_rated')

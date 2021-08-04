@@ -1,0 +1,8 @@
+<div [ngModel]="movieDetail" class="container">
+  <img [src]="IMG_PATH + movieDetail.poster_path" alt="">
+  <h1>{{movieDetail.title}}</h1>
+  <p>{{movieDetail.overview}}</p>
+  <h2>About:</h2>
+  <p><b>Production year: </b>{{movieDetail.release_date}}</p>
+  <p><b>Status: </b>{{movieDetail.status}}</p>
+</div>
